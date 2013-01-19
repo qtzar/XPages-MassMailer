@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='utf-8'?>
+<note class='form' xmlns='http://www.lotus.com/dxl' version='9.0' replicaid='85257AF80013E183'>
+<noteinfo noteid='192' unid='D1D8CB70526BBB4B85257AF80017E81C' sequence='3'>
+<created><datetime>20130118T232107,48-05</datetime></created>
+<modified><datetime>20130118T232512,60-05</datetime></modified>
+<revised><datetime>20130118T232512,59-05</datetime></revised>
+<lastaccessed><datetime>20130118T232512,59-05</datetime></lastaccessed>
+<addedtofile><datetime>20130118T232108,01-05</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Declan Lynch/O=CZARNOWSKI</name></updatedby>
+<wassignedby><name>CN=Declan Lynch/O=CZARNOWSKI</name></wassignedby>
+<item name='$HTMLCode' sign='true'>
+<rawitemdata type='1'>
+X/8QAAIADwAHAAAAAAAAAA==
+</rawitemdata></item>
+<item name='$Comment' sign='true'><text/></item>
+<item name='$Info' sign='true'>
+<rawitemdata type='1'>
+hhgBAIAAAAAAgAAAAQABAP///wAQAAAA
+</rawitemdata></item>
+<item name='$Flags'><text/></item>
+<item name='$$ScriptName' summary='false' sign='true'><text>fm_MailerSetup</text></item>
+<item name='mailer_mailinname' placeholder='true'>
+<rawitemdata type='0'>
+</rawitemdata></item>
+<item name='mailer_owner' placeholder='true'>
+<rawitemdata type='0'>
+</rawitemdata></item>
+<item name='mailer_sendto' placeholder='true'>
+<rawitemdata type='0'>
+</rawitemdata></item>
+<item name='mailer_Authorized' placeholder='true'>
+<rawitemdata type='0'>
+</rawitemdata></item>
+<item name='$Fields'><textlist><text>mailer_Authorized</text><text>mailer_sendto</text><text
+>mailer_owner</text><text>mailer_mailinname</text></textlist></item>
+<item name='$Body' sign='true'>
+<rawitemdata type='1'>
+gQKC/1oAAQAAAAAAAAAAAKAFAACgBQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAABAAAAAJSHAAAAAAAAAAAAAAAAAQAAAAQAAACDBAEAhf8IAAEAAAqBAoMEAQCF/x4A
+AQAACk1haWxpbiBEYXRhYmFzZSBOYW1lCQndBgAAiv/+/1AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAB4AHgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIr/
+NgCKAAAFADACAAAAAAAAAgEAAAoAAAAAAAAAABEAAAAAAG1haWxlcl9tYWlsaW5uYW1lAGIOAQCE
+AAAAAAAAAAAA3gYAAIr/hf8IAAEAAAqBAoMEAQCF/wgAAQAACoECgwQBAIX/FQABAAAKTGlzdCBP
+d25lcgkJCQDdBgAAiv/+/1AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB4AHgA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIr/MACOAAAFADACAAAAAAAAAgEA
+AAoAAAAAAAAAAAwAAAAAAG1haWxlcl9vd25lct4GAACK/4X/CAABAAAKgQKDBAEAhf8aAAEAAApM
+aXN0IEF1dGhvcml6ZWQJCQndBgAAiv/+/1AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAB4AHgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIr/NgCOAAEFBjAC
+AAAAAAAAAgEAAAoAAAAAAAAAABEAAAAAAG1haWxlcl9BdXRob3JpemVkAN4GAACK/4X/CAABAAAK
+gQKDBAEAhf8XAAEAAApMaXN0IFNlbmQgVG8JCQkA3QYAAIr//v9QAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAeAB4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AACK/zIAjgABBQYwAgAAAAAAAAIBAAAKAAAAAAAAAAANAAAAAABtYWlsZXJfc2VuZHRvAN4GAACK
+/4X/CAABAAAK
+</rawitemdata></item>
+<item name='$TITLE' sign='true'><text>fm_List</text></item>
+<item name='$DesignerVersion' sign='true'><text>8.5.3</text></item></note>
+

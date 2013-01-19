@@ -3,4 +3,32 @@
 	xmlns:xc="http://www.ibm.com/xsp/custom">
 
 	<xc:cc_layout_setup><xp:this.facets>
-	<xp:panel xp:key="facetMiddle"></xp:panel></xp:this.facets></xc:cc_layout_setup></xp:view>
+	<xc:cc_menu_setup xp:key="facetLeft"></xc:cc_menu_setup>
+	<xp:panel xp:key="facetMiddle" styleClass="lotusActionbar">
+		<xp:panel>
+			<xp:link escape="true" text="New List" id="link1"
+				value="/list.xsp" outerStyleClass="lotusBtn">
+			</xp:link>
+		</xp:panel>
+		<xp:panel id="listView">
+			<xp:viewPanel rows="9999" id="viewPanel1"
+				viewStyle="width:100%" pageName="/list.xsp">
+
+				<xp:this.data>
+					<xp:dominoView var="view1" viewName="vw_Lists"></xp:dominoView>
+				</xp:this.data>
+				<xp:viewColumn columnName="mailer_mailinname"
+					id="viewColumn1" displayAs="link" openDocAsReadonly="true">
+					<xp:viewColumnHeader value="Name"
+						id="viewColumnHeader1">
+					</xp:viewColumnHeader>
+				</xp:viewColumn>
+				<xp:viewColumn columnName="mailer_owner"
+					id="viewColumn2">
+					<xp:viewColumnHeader value="Owner"
+						id="viewColumnHeader2">
+					</xp:viewColumnHeader>
+				</xp:viewColumn>
+			</xp:viewPanel></xp:panel>
+	</xp:panel>
+	</xp:this.facets></xc:cc_layout_setup></xp:view>

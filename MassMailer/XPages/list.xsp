@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core" xmlns:xc="http://www.ibm.com/xsp/custom"
+	xmlns:xe="http://www.ibm.com/xsp/coreex">
+
+	<xp:this.data>
+		<xp:dominoDocument var="listdoc" formName="fm_List" />
+	</xp:this.data>
+	<xc:cc_layout_setup>
+		<xp:this.facets>
+			<xp:panel xp:key="facetMiddle">
+				<xe:formTable id="formTable1" formTitle="List Configuration">
+					<xe:formRow id="formRow1" label="List Name">
+						<xp:inputText id="inputText1"
+							value="#{listdoc.mailer_mailinname}" required="true" >
+							<xp:this.validators>
+								<xp:validateRequired
+									message="You must supply a name for the mailing list.">
+								</xp:validateRequired>
+							</xp:this.validators></xp:inputText>
+					</xe:formRow>
+					<xe:formRow id="formRow2" label="Owner">
+						<xe:djextNameTextBox id="djextNameTextBox1" value="#{listdoc.mailer_owner}"/>
+						<xe:namePicker id="namePicker1" for="djextNameTextBox1">
+							<xe:this.dataProvider>
+								<xe:dominoNABNamePicker groups="false"
+									people="true" nameList="peopleByLastName" addressBookSel="all-public" />
+
+							</xe:this.dataProvider>
+						</xe:namePicker>
+					</xe:formRow>
+					<xe:formRow id="formRow3" label="Authorized Users">
+						<xe:djextNameTextBox id="djextNameTextBox2"
+							multipleSeparator="," multipleTrim="true" value="#{listdoc.mailer_Authorized}"/>
+						<xe:namePicker id="namePicker2" for="djextNameTextBox2">
+							<xe:this.dataProvider>
+								<xe:dominoNABNamePicker groups="false"
+									people="true" nameList="peopleByLastName" addressBookSel="all-public" />
+
+							</xe:this.dataProvider>
+						</xe:namePicker>
+					</xe:formRow>
+					<xe:formRow id="formRow4" label="Send To">
+						<xe:djextNameTextBox id="djextNameTextBox3"
+							multipleSeparator="," multipleTrim="true" value="#{listdoc.mailer_sendto}"/>
+
+						<xe:namePicker id="namePicker3" for="djextNameTextBox3">
+							<xe:this.dataProvider>
+								<xe:dominoNABNamePicker groups="true"
+									people="true" nameList="peopleAndGroups"
+									addressBookSel="all-public" />
+
+							</xe:this.dataProvider>
+						</xe:namePicker>
+					</xe:formRow>
+					<xp:this.facets>
+						<xp:panel xp:key="footer">
+							<xp:link escape="true" text="Save" id="link1"
+								outerStyleClass="lotusBtn" ><xp:eventHandler event="onclick" submit="true" refreshMode="complete">
+	<xp:this.action>
+
+		<xp:actionGroup>
+			<xp:saveDocument var="listdoc"></xp:saveDocument>
+			<xp:openPage name="/setup.xsp"></xp:openPage>
+		</xp:actionGroup>
+	</xp:this.action></xp:eventHandler></xp:link>
+
+							<xp:link escape="true" text="Cancel" id="link2" value="/setup.xsp">
+								<xp:eventHandler event="onclick" submit="true"
+									refreshMode="complete" immediate="true" />
+
+							</xp:link>
+						</xp:panel>
+					</xp:this.facets>
+				</xe:formTable>
+			</xp:panel>
+		</xp:this.facets>
+	</xc:cc_layout_setup>
+</xp:view>

@@ -6,28 +6,42 @@
 	<xe:applicationLayout id="applicationLayout1">
 		<xp:callback facetName="facetMiddle" id="facetMiddle"></xp:callback>
 		<xe:this.facets>
-			<xc:cc_menu_setup xp:key="LeftColumn"></xc:cc_menu_setup>
+			<xp:callback facetName="facetLeft" id="facetLeft"
+				xp:key="LeftColumn">
+			</xp:callback>
 
 			<xp:callback facetName="facetRight" id="facetRight"
 				xp:key="RightColumn">
 			</xp:callback>
+
 		</xe:this.facets>
 		<xe:this.configuration>
-			<xe:oneuiApplication>
+			<xe:oneuiApplication titleBarName="XPages Mass Mailer"
+				placeBarName="System Configuration">
 				<xe:this.footerLinks>
-					<xe:basicContainerNode label="Container 1">
+					<xe:basicContainerNode label="Mass Mailer">
+
 						<xe:this.children>
-							<xe:basicLeafNode label="Link 1" href="/"></xe:basicLeafNode>
-							<xe:basicLeafNode label="Link 2" href="/"></xe:basicLeafNode>
+							<xe:pageTreeNode label="Help"
+								page="/help.xsp">
+							</xe:pageTreeNode>
+							<xe:pageTreeNode label="About"
+								page="/about.xsp">
+							</xe:pageTreeNode>
 						</xe:this.children>
 					</xe:basicContainerNode>
-					<xe:basicContainerNode label="Container 2">
-						<xe:this.children>
-							<xe:basicLeafNode label="Link 1" href="/"></xe:basicLeafNode>
-							<xe:basicLeafNode label="Link 2" href="/"></xe:basicLeafNode>
-						</xe:this.children>
-					</xe:basicContainerNode>
+
 				</xe:this.footerLinks>
+				<xe:this.bannerApplicationLinks>
+					<xe:pageTreeNode label="Home" page="/home.xsp"></xe:pageTreeNode>
+				</xe:this.bannerApplicationLinks>
+				<xe:this.placeBarActions>
+					<xe:pageTreeNode label="Home" page="/home.xsp"></xe:pageTreeNode>
+				</xe:this.placeBarActions>
+				<xe:this.bannerUtilityLinks>
+					<xe:loginTreeNode></xe:loginTreeNode>
+					<xe:userTreeNode></xe:userTreeNode>
+				</xe:this.bannerUtilityLinks>
 			</xe:oneuiApplication>
 		</xe:this.configuration>
 	</xe:applicationLayout>
