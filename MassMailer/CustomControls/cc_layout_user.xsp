@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core"
+	xmlns:xe="http://www.ibm.com/xsp/coreex"
+	xmlns:xc="http://www.ibm.com/xsp/custom">
+
+	<xe:applicationLayout id="applicationLayout1">
+		<xp:callback facetName="facetMiddle" id="facetMiddle"></xp:callback>
+		<xe:this.facets>
+			<xc:cc_menu_user xp:key="LeftColumn"></xc:cc_menu_user>
+			<xp:callback facetName="facetRight" id="facetRight"
+				xp:key="RightColumn">
+			</xp:callback>
+
+		</xe:this.facets>
+		<xe:this.configuration>
+			<xe:oneuiApplication titleBarName="XPages Mass Mailer">
+				<xe:this.footerLinks>
+					<xe:basicContainerNode label="Mass Mailer">
+
+						<xe:this.children>
+							<xe:pageTreeNode label="Help"
+								page="/help.xsp">
+							</xe:pageTreeNode>
+							<xe:pageTreeNode label="About"
+								page="/about.xsp">
+							</xe:pageTreeNode>
+						</xe:this.children>
+					</xe:basicContainerNode>
+
+				</xe:this.footerLinks>
+				<xe:this.bannerApplicationLinks>
+					<xe:pageTreeNode label="Home" page="/home.xsp"></xe:pageTreeNode>
+				</xe:this.bannerApplicationLinks>
+				<xe:this.placeBarActions>
+					<xe:pageTreeNode label="Setup" page="/setup.xsp"></xe:pageTreeNode>
+				</xe:this.placeBarActions>
+				<xe:this.bannerUtilityLinks>
+					<xe:loginTreeNode></xe:loginTreeNode>
+					<xe:userTreeNode></xe:userTreeNode>
+				</xe:this.bannerUtilityLinks>
+			</xe:oneuiApplication>
+		</xe:this.configuration>
+	</xe:applicationLayout>
+</xp:view>
